@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework lab 8</title>
+    <link href="lab8tl.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <form action="https://youtube-api-challenger.appspot.com/member/register" method="post">
+        <fieldset>
+            <legend>Thông tin cơ bản</legend>
+            <label for="username">Tên tài khoản<input type="text" name="username" id="username" required minlength="7"></label>
+            <br>
+            <label for="email">Email<input type="email" name="email" id="email" required minlength="7"></label>
+            <br>
+            <label for="password">Mật khẩu<input type="password" name="password" id="password" required></label>
+            <br>
+            <label for="confirmPassword">Xác nhận mật khẩu<input type="password" name="password" id="confirmPassword" required></label>
+            <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Thông tin chi tiết</legend>
+            <label for="fullName">Tên đầy đủ <input type="text" name="fullName" id="fullName"><br></label>
+
+            <label for="bd">Ngày sinh<input type="date" name="birthDay" id="bd"></label>
+            <br>
+            <label>Giới tính</label>
+            <input type="radio" id="gender" name="gender" value="1">Nam
+            <input type="radio" name="gender" value="0">Nữ
+            <br>
+            <label>Sở thích</label>
+            <input type="checkbox" name="favorite" id="fav" value="Thể thao">Thể thao
+            <input type="checkbox" name="favorite" value="Xem phim">Xem phim
+            <input type="checkbox" name="favorite" value="Nghe nhạc">Nghe nhạc
+            <input type="checkbox" name="favorite" value="Đọc sách">Đọc sách
+            <br>
+            <label>Ảnh đại diện</label>
+            <input type="file" name="image" id="img">
+            <br>
+            <label for="about">Giới thiệu bản thân</label>
+            <textarea name="about" id="about"></textarea>
+        </fieldset>
+        <input type="submit" id="sm" name="submit" value="Đăng ký" >
+        <input type="reset" name="reset" value="Làm lại">
+    </form>
+</body>
+</html>
